@@ -5,12 +5,12 @@ class Shoe
     @brand = brand 
   end 
   
-  BRAND = []
+  BRANDS = []
 
 def brand=(brand)
   @brand = brand 
   brand.unique do |ubrand|
-    BRAND << ubrand
+    BRANDS << ubrand
   end 
 end 
     
